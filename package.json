@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "A Babel plugin to transform inject imports to service imports from @ember/service",
   "main": "src/index.js",
+  "repository": "https://github.com/NullVoxPopuli/undeprecate-inject-from-at-ember-service",
+  "author": "NullVoxPopuli",
   "scripts": {
+    "format": "prettier . --write",
     "test": "vitest"
   },
   "keywords": [
@@ -12,7 +15,6 @@
     "service",
     "inject"
   ],
-  "author": "",
   "license": "MIT",
   "packageManager": "pnpm@10.15.0",
   "peerDependencies": {
