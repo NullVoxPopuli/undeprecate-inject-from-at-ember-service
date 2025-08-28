@@ -1,5 +1,5 @@
-import babel from '@babel/core'
-import plugin from '../src/index.js';
+import babel from "@babel/core";
+import plugin from "../src/index.js";
 
 describe("babel-plugin-undeprecate-inject-from-at-ember-service", () => {
   function transform(code) {
@@ -23,10 +23,12 @@ describe("babel-plugin-undeprecate-inject-from-at-ember-service", () => {
     expect(output).toBe("import { service as inject } from '@ember/service';");
   });
 
-    test("transforms multi inject import", () => {
+  test("transforms multi inject import", () => {
     const input = "import { inject, service } from '@ember/service';";
     const output = transform(input);
-    expect(output).toBe("import { service as inject, service } from '@ember/service';");
+    expect(output).toBe(
+      "import { service as inject, service } from '@ember/service';",
+    );
   });
 
   test("transforms mixed imports with inject", () => {
