@@ -23,6 +23,12 @@ describe("babel-plugin-undeprecate-inject-from-at-ember-service", () => {
     expect(output).toBe("import { service as inject } from '@ember/service';");
   });
 
+    test("transforms multi inject import", () => {
+    const input = "import { inject, service } from '@ember/service';";
+    const output = transform(input);
+    expect(output).toBe("import { service as inject, service } from '@ember/service';");
+  });
+
   test("transforms mixed imports with inject", () => {
     const input = "import { inject, getOwner } from '@ember/service';";
     const output = transform(input);

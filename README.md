@@ -19,20 +19,16 @@ pnpm add -D babel-plugin-undeprecate-inject-from-at-ember-service
 
 Add the plugin to your Babel configuration:
 
-**.babelrc**
-
-```json
-{
-  "plugins": ["undeprecate-inject-from-at-ember-service"]
-}
-```
-
-**babel.config.js**
-
-```javascript
-module.exports = {
-  plugins: ["undeprecate-inject-from-at-ember-service"],
-};
+```js
+// ember-cli-build.js
+// ...
+let app = new EmberApp({
+  babel: {
+    plugins: [
+      require.resolve('babel-plugin-undeprecate-inject-from-at-ember-service')
+    ]
+  }
+});
 ```
 
 ## Examples
