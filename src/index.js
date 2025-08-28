@@ -10,6 +10,8 @@ module.exports = function (babel) {
           return;
         }
 
+        const newSpecifiers = [];
+
         // Process all specifiers
         path.node.specifiers.forEach((specifier) => {
           if (t.isImportSpecifier(specifier)) {
