@@ -21,10 +21,7 @@ Add the plugin to your Babel configuration:
 
 ```js
 // ember-cli-build.js
-"use strict";
-
 const EmberApp = require("ember-cli/lib/broccoli/ember-app");
-
 module.exports = function (defaults) {
   const app = new EmberApp(defaults, {
     // transforms your own app
