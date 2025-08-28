@@ -89,7 +89,6 @@ import { service as inject } from "@ember/service";
 ```bash
 pnpm install
 pnpm test
-pnpm run build
 ```
 
 Tests are written using Vitest.
