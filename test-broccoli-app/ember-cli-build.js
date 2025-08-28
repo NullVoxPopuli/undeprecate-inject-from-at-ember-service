@@ -4,13 +4,18 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function (defaults) {
   const app = new EmberApp(defaults, {
-    "ember-cli-babel": {
-      throwUnlessParallelizable: true
+    'ember-cli-babel': {
+      throwUnlessParallelizable: true,
     },
     babel: {
       plugins: [
-        [require.resolve('babel-plugin-undeprecate-inject-from-at-ember-service'), {}]
-      ]
+        [
+          require.resolve(
+            'babel-plugin-undeprecate-inject-from-at-ember-service',
+          ),
+          {},
+        ],
+      ],
     },
     autoImport: {
       webpack: {
@@ -24,16 +29,17 @@ module.exports = function (defaults) {
                 loader: 'babel-loader-8',
                 options: {
                   plugins: [
-                    require.resolve('babel-plugin-undeprecate-inject-from-at-ember-service')
-                  ]
+                    require.resolve(
+                      'babel-plugin-undeprecate-inject-from-at-ember-service',
+                    ),
+                  ],
                 },
               },
-            }
-          ]
-        }
-      }
-
-    }
+            },
+          ],
+        },
+      },
+    },
   });
 
   return app.toTree();
