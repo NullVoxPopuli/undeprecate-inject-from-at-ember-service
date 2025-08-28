@@ -1,0 +1,28 @@
+{
+  "name": "babel-plugin-undeprecate-inject-from-at-ember-service",
+  "version": "1.0.0",
+  "description": "A Babel plugin to transform inject imports to service imports from @ember/service",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [
+    "babel-plugin",
+    "ember",
+    "service",
+    "inject"
+  ],
+  "author": "",
+  "license": "MIT",
+  "packageManager": "pnpm@10.15.0",
+  "peerDependencies": {
+    "@babel/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.0",
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "prettier": "^3.6.2",
+    "vitest": "^3.2.4"
+  }
+}
