@@ -18,6 +18,10 @@ module.exports = function (babel) {
             return;
           }
 
+          if (state.filename.includes('ember-source/ember/')) {
+            return;
+          }
+
           if (!state.filename.includes('/.embroider/')) {
             return;
           }
