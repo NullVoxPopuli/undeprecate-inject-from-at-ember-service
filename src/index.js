@@ -6,6 +6,10 @@ module.exports = function (babel) {
     visitor: {
       ImportDeclaration(path, state) {
         if (state.filename?.includes('/ember-source/')) {
+          if (state.filename.includes('@ember/service/index.js')) {
+            return;
+          }
+
           if (!state.filename.includes('/.embroider/')) {
             return;
           }
