@@ -5,6 +5,8 @@ module.exports = function (babel) {
     name: "undeprecate-inject-from-at-ember-service",
     visitor: {
       ImportDeclaration(path, state) {
+        if (state.filename?.includes('/ember-source/')) return;
+
         // Only process imports from '@ember/service'
         if (path.node.source.value !== "@ember/service") {
           return;
