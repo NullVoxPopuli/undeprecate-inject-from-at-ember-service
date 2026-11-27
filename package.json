@@ -20,13 +20,14 @@
     "@babel/cli": "^7.22.0",
     "@babel/core": "^7.22.0",
     "@babel/preset-env": "^7.22.0",
+    "babel-8": "npm:@babel/core@^8.1.4",
     "prettier": "^3.6.2",
     "prettier-plugin-ember-template-tag": "^2.1.0",
     "release-plan": "^0.18.0",
     "vitest": "^3.2.4"
   },
   "peerDependencies": {
-    "@babel/core": "^7.0.0"
+    "@babel/core": "^7.0.0 || ^8.0.0"
   },
   "packageManager": "pnpm@10.15.0"
 }
