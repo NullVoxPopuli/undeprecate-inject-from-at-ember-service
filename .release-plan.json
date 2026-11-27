@@ -1,0 +1,22 @@
+{
+  "solution": {
+    "babel-plugin-undeprecate-inject-from-at-ember-service": {
+      "impact": "patch",
+      "oldVersion": "1.0.7",
+      "newVersion": "1.0.8",
+      "tagName": "latest",
+      "constraints": [
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :bug: Bug Fix"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
+        }
+      ],
+      "pkgJSONPath": "./package.json"
+    }
+  },
+  "description": "## Release (2026-11-27)\n\n* babel-plugin-undeprecate-inject-from-at-ember-service 1.0.8 (patch)\n\n#### :bug: Bug Fix\n* `babel-plugin-undeprecate-inject-from-at-ember-service`\n  * [#1](https://github.com/NullVoxPopuli/undeprecate-inject-from-at-ember-service/pull/1) Accept @babel/core 8 as a peer ([@NullVoxPopuli-ai-agent](https://github.com/NullVoxPopuli-ai-agent))\n\n#### :house: Internal\n* `babel-plugin-undeprecate-inject-from-at-ember-service`\n  * [#2](https://github.com/NullVoxPopuli/undeprecate-inject-from-at-ember-service/pull/2) release plan ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 2\n- @NullVoxPopuli's reduced-access machine account for AI usage ([@NullVoxPopuli-ai-agent](https://github.com/NullVoxPopuli-ai-agent))\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
+}

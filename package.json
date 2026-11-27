@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-undeprecate-inject-from-at-ember-service",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A Babel plugin to transform inject imports to service imports from @ember/service",
   "keywords": [
     "babel-plugin",
